@@ -6,6 +6,16 @@ PASTA is a risk-centric approach that focuses on simulating potential attacks to
 
 ## Stages of PASTA
 
+P: Process - This refers to the structured approach taken throughout the threat modeling process, ensuring that each step is followed systematically.
+
+A: Attack - Focuses on simulating potential attacks to understand how threats might be realized against the system.
+
+S: Simulation - Involves creating scenarios that simulate attacks, helping to visualize and analyze possible threat impacts.
+
+T: Threat - Identifying and understanding the various threats that can affect the system or application.
+
+A: Analysis - The process of analyzing threats and vulnerabilities to assess risks and determine appropriate mitigations.
+
 ### 1. Define the Objectives
 
 - **Goal**: Establish the security objectives and business requirements for the application.
