@@ -52,6 +52,7 @@ if __name__ == "__main__":
         print(ip)
 ```
 
+### Extract JSON row 1 and row 4
 ```
 import json
 
@@ -76,6 +77,7 @@ if __name__ == "__main__":
         print(entry)
 ```
 
+### Manually Ping IP addresses
 ```
 import subprocess
 import platform
@@ -118,6 +120,7 @@ if __name__ == "__main__":
         print(ip)
 ```
 
+### Convert CSV to JSON
 ```
 import csv
 import json
