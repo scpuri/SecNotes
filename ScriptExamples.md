@@ -141,3 +141,11 @@ if __name__ == "__main__":
     csv_to_json(csv_file_path, json_file_path)
     print(f"Converted {csv_file_path} to {json_file_path}")
 ```
+
+### Remove Special Chars
+```
+import re
+
+def remove_special_characters(input_string):
+    return re.sub(r'[^a-zA-Z0-9\s]', '', input_string)
+```
