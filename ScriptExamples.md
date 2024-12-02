@@ -1,3 +1,32 @@
+### Regex for IPv6
+```
+A correct regex for matching basic IPv6 addresses would look like this:
+
+\b(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}\b
+
+Explanation:
+\b: Word boundary to ensure the match is isolated.
+(?: ... ): Non-capturing group to group repeated parts.
+[0-9a-fA-F]{1,4}: Matches 1 to 4 hexadecimal characters (0–9, a–f, A–F).
+:: Matches the colon separator between groups.
+{7}: Ensures exactly 7 repetitions for the first 7 groups.
+[0-9a-fA-F]{1,4}: Matches the final group after the 7 colons.
+```
+
+### Regex for IPv4
+```
+\b(?:\d{1,3}\.){3}\d{1,3}\b
+
+Explanation:
+\b: Ensures the match is a standalone word, preventing partial matches.
+(?: ... ): Creates a non-capturing group to repeat the content inside.
+\d{1,3}: Matches 1 to 3 digits (each octet in an IPv4 address).
+\.: Matches the period (.) between octets. Escaped because . is a special character in regex.
+{3}: Ensures the group (digits followed by a period) is repeated exactly three times.
+\d{1,3}: Matches the final octet without a trailing period.
+```
+
+### Extract IP address from a file
 ```
 import re
 
