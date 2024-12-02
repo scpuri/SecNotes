@@ -149,3 +149,27 @@ import re
 def remove_special_characters(input_string):
     return re.sub(r'[^a-zA-Z0-9\s]', '', input_string)
 ```
+
+### Requests Library
+```
+import requests
+
+# Define the URL and condition
+url = "http://example.com"  # Replace with your host URL
+expected_content = "desired content"  # Replace with the text you're looking for
+
+try:
+    # Send GET request
+    response = requests.get(url, timeout=10)
+    
+    # Check the response content
+    if expected_content in response.text:
+        print("Response contains the desired content:")
+        print(response.text)
+    else:
+        print("Desired content not found in the response.")
+
+except requests.RequestException as e:
+    print(f"An error occurred: {e}")
+
+```
