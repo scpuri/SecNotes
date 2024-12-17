@@ -78,10 +78,6 @@ A: Analysis - The process of analyzing threats and vulnerabilities to assess ris
 - **Comprehensive Approach**: Addresses technical, procedural, and organizational aspects of security.
 - **Dynamic**: Adaptable to different technologies, platforms, and development methodologies.
 
-## Conclusion
-
-By following the PASTA methodology, organizations can develop a thorough understanding of potential threats to their applications and implement effective security measures to mitigate risks, ultimately leading to more secure systems and greater stakeholder confidence.
-
 
 # Risk Modeling Using STRIDE Model
 
@@ -93,6 +89,8 @@ The STRIDE model is a threat modeling framework that helps identify and categori
 - **Information Disclosure**: Unauthorized access to sensitive information.
 - **Denial of Service (DoS)**: Disrupting the availability of a service or system.
 - **Elevation of Privilege**: Gaining higher access rights than intended.
+
+
 
 ## Steps to Use STRIDE for Risk Modeling
 
@@ -131,6 +129,62 @@ The STRIDE model is a threat modeling framework that helps identify and categori
 By leveraging the STRIDE model, organizations can enhance their risk management processes, leading to more secure systems.
 
 
+
+### 1. Define the Objectives
+
+- **Goal**: Establish the security objectives and business requirements for the application.
+- **Activities**:
+  - Identify stakeholders and their security concerns.
+  - Define the application’s business context and critical functions.
+
+### 2. Define the Technical Scope
+
+- **Goal**: Understand the technical components of the system.
+- **Activities**:
+  - Create architecture diagrams and data flow diagrams (DFDs).
+  - Identify all components, including servers, databases, and interfaces.
+
+### 3. Decompose the Application
+
+- **Goal**: Break down the application into manageable components for analysis.
+- **Activities**:
+  - Identify and document the various subsystems and their interactions.
+  - Analyze data storage, data flows, and user interactions.
+
+### 4. Identify Threats
+
+- **Goal**: Identify potential threats to each component.
+- **Activities**:
+  - Use threat modeling frameworks like STRIDE or others to classify threats.
+  - Consider attacker perspectives and possible attack vectors.
+
+### 5. Analyze Vulnerabilities
+
+- **Goal**: Evaluate the identified threats against the application to determine vulnerabilities.
+- **Activities**:
+  - Conduct vulnerability assessments or reviews of existing security controls.
+  - Map threats to known vulnerabilities using databases (e.g., OWASP, CVE).
+
+### 6. Simulate Attacks
+
+- **Goal**: Conduct simulations to understand how threats can be exploited.
+- **Activities**:
+  - Perform penetration testing or red teaming exercises to validate threats.
+  - Analyze results to understand potential impacts and exploitability.
+
+### 7. Assess Risk
+
+- **Goal**: Evaluate the risks posed by identified threats and vulnerabilities.
+- **Activities**:
+  - Use risk assessment methodologies (e.g., qualitative or quantitative analysis).
+  - Prioritize risks based on impact and likelihood.
+
+### 8. Mitigation Strategies
+
+- **Goal**: Develop and implement strategies to mitigate identified risks.
+- **Activities**:
+  - Propose security controls, policy changes, or design modifications.
+  - Create a risk management plan that includes timelines and responsibilities.
 ##
 1. System Diagram
 2. Attack Surface
